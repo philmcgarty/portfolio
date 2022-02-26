@@ -1,4 +1,88 @@
 :root {
-    --primary-color: teal;
+    --primary-color: 	#B6E8EA;
     --secondary-color: navy;
+    --tertiary-color: #383E3E;
+}
+
+
+/*Re-used * styling from run-buddy project*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--secondary-color);
+}
+
+/* HEADER SECTION */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    padding: 10px 0 10px 0;
+}
+
+header h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: var(--primary-color);
+    padding: 5px 8px 5px 60px;
+}
+
+header nav {
+    padding: 12px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+header nav ul li a {
+    color: var(--primary-color);
+    padding: 0 6px 5px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: var(--primary-color) solid 2px;
+    margin: 5px 5px;
+    
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+/* END OF HEADER SECTION */
+
+.hero {
+  background-image: url("../images/hero-background2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 8px;
+    margin: 90px 40px 10px 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
 }
