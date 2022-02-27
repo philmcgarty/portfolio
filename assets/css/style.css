@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 a {
@@ -43,22 +44,33 @@ header nav {
     padding: 12px 0;
 }
 
-header nav ul {
-    list-style: none;
+header nav ul, .contact-me ul {
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
     align-items: center;
+    
+}
+
+header nav ul {
     justify-content: space-between;
+    
+    
     margin-right: 50px;
 }
-header nav ul li a {
-    color: var(--primary-color);
+header nav ul li a, .contact-me ul li a {
+    
     padding: 0 6px 5px 6px;
     font-size: 14px;
     font-weight: bold;
-    border-bottom: var(--primary-color) solid 2px;
+    
     margin: 5px 5px;
     
+}
+
+header nav ul li a {
+    color: var(--primary-color);
+    border-bottom: var(--primary-color) solid 2px;
 }
 
 header nav ul li a:hover {
@@ -66,6 +78,7 @@ header nav ul li a:hover {
 }
 /* END OF HEADER SECTION */
 
+/* HERO SECTION */
 .hero {
   background-image: url("../images/hero-background2.jpg");
   background-size: cover;
@@ -85,4 +98,53 @@ header nav ul li a:hover {
     padding: 8px;
     margin: 90px 40px 10px 0;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
+/* END OF HERO SECTION */
+
+/* ---- MAIN SECTION ---- */
+
+main {
+    background-color: #F0F5F5;
+    padding: 20px 30px 20px 5px;
+}
+
+/* Contact Section */
+.contact-me, .about-me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.section-title {
+    border-right: var(--secondary-color) solid 3px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 34px;
+    font-weight: 400;
+    flex: 1;
+    flex: 0 0 170px;
+}
+
+.section-title h3 {
+    font-size: 34px;
+    font-weight: bold;
+
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 4;
+}
+
+.contact-links li a {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) solid 2px;
+}
+
+/* About Me */
+
+.about-me-content {
+    flex: 4;
 }
