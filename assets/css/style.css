@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+.italic {
+    font-style: italic;
+}
+
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--secondary-color);
@@ -108,12 +113,15 @@ main {
     padding: 20px 30px 20px 5px;
 }
 
-/* Contact Section */
-.contact-me, .about-me {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.about-me-content, .work-container, .contact-links {
+    padding: 0 20px 30px 20px;
+}
 
+/* Contact Section */
+.contact-me, .about-me, .work{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0; 
 }
 
 .section-title {
@@ -121,8 +129,7 @@ main {
     text-align: right;
     padding-right: 10px;
     font-size: 34px;
-    font-weight: 400;
-    flex: 1;
+    font-weight: 400;   
     flex: 0 0 170px;
 }
 
@@ -147,4 +154,65 @@ main {
 
 .about-me-content {
     flex: 4;
+}
+
+
+/* Work Section */
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+}      
+/* Got this break idea from: https://tobiasahlin.com/blog/flexbox-break-to-new-row/ */ 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.work-item {
+    background-color: aquamarine;
+    height: 150px;
+    flex: 0 0 49%;
+    margin-top: 10px;
+}
+
+.work-item-large:hover, .work-item:hover {
+    border: var(--secondary-color) solid 5px;
+}
+
+.work-item, .work-item-large {
+    border: var(--primary-color) solid 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.work-item-text {
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.work-item-large {
+    background-image: url("../images/run-buddy.png");
+    height: 300px;
+    flex: 0 0 100%;
+    
+}
+.horiseon {
+    background-image: url("../images/horiseon.png"); 
+}
+
+.robot-gladiators {
+    background-image: url("../images/robot-gladiators.png");
+}
+
+.coming-soon {
+    background-image: url("../images/red.jpg"); 
+}
+
+.coming-soon2 {
+    background-image: url("../images/green.jpg"); 
 }
