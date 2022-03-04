@@ -1,10 +1,10 @@
+/* STYLES FOR ENTIRE PAGE */
+/* main colors for site */
 :root {
     --primary-color: 	#B6E8EA;
     --secondary-color: navy;
     --tertiary-color: #383E3E;
 }
-
-
 /*Re-used * styling from run-buddy project*/
 * {
     margin: 0;
@@ -12,27 +12,27 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+/* allow scrolling for navigation */
 html {
     scroll-behavior: smooth;
 }
-
+/* remove default a tag styling */
 a {
     text-decoration: none;
 }
-
+/* italicize text */
 .italic {
     font-style: italic;
 }
-
-
+/* apply font */
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--secondary-color);
 }
+/* END STYLES FOR ENTIRE PAGE */
+
 
 /* HEADER SECTION */
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -57,24 +57,18 @@ header nav ul, .contact-me ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 header nav ul {
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;   
     margin-right: 50px;
 }
-header nav ul li a, .contact-me ul li a {
-    
+header nav ul li a, .contact-me ul li a {    
     padding: 0 6px 5px 6px;
     font-size: 14px;
-    font-weight: bold;
-    
-    margin: 5px 5px;
-    
+    font-weight: bold;    
+    margin: 5px 5px;  
 }
 
 header nav ul li a {
@@ -87,6 +81,7 @@ header nav ul li a:hover {
 }
 /* END OF HEADER SECTION */
 
+
 /* HERO SECTION */
 .hero {
   background-image: url("../images/hero-background2.jpg");
@@ -94,8 +89,7 @@ header nav ul li a:hover {
   background-position: center;
   display: flex;
   justify-content: right;
-  align-items: flex-end;
-  
+  align-items: flex-end; 
 }
 
 .hero h2 {
@@ -110,8 +104,8 @@ header nav ul li a:hover {
 }
 /* END OF HERO SECTION */
 
-/* ---- MAIN SECTION ---- */
 
+/* ---- MAIN SECTION ---- */
 main {
     background-color: #F0F5F5;
     padding: 20px 30px 20px 5px;
@@ -121,7 +115,6 @@ main {
     padding: 0 20px 30px 20px;
 }
 
-/* Contact Section */
 .contact-me, .about-me, .work{
     display: flex;
     justify-content: flex-start;
@@ -140,9 +133,9 @@ main {
 .section-title h3 {
     font-size: 34px;
     font-weight: bold;
-
 }
 
+/* Contact Section */
 .contact-links {
     display: flex;
     justify-content: space-evenly;
@@ -153,9 +146,9 @@ main {
     color: var(--secondary-color);
     border-bottom: var(--secondary-color) solid 2px;
 }
+/* End Contact Section */
 
-/* About Me */
-
+/* About Me Section */
 .about-me-content {
     display: flex;
     flex-wrap: wrap;
@@ -172,9 +165,10 @@ main {
     width: 200px;
     border-radius: 50%;
 }
+/* End About Me Section */
+
 
 /* Work Section */
-
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -210,12 +204,13 @@ main {
     margin-bottom: 20px;
 }
 
+/* work tile images */
 .work-item-large {
     background-image: url("../images/run-buddy.png");
     height: 300px;
-    flex: 0 0 100%;
-    
+    flex: 0 0 100%;   
 }
+
 .horiseon {
     background-image: url("../images/horiseon.png"); 
 }
@@ -231,10 +226,13 @@ main {
 .coming-soon2 {
     background-image: url("../images/green.jpg"); 
 }
+/* End Work Section */
+/* END MAIN */
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
+    
     /* HEADER SECTION*/
     header h1 {
         font-size: 60px;
@@ -247,11 +245,11 @@ main {
 
     header nav ul li a {
         font-size: 20px;
-        margin: 5px 10px;
-        
+        margin: 5px 10px;       
     }
+    /* END HEADER SECTION */
 
-
+    /* MAIN SECTION */
     .about-me, .work, .contact-me {
         flex-direction: column;
     }
@@ -264,15 +262,31 @@ main {
         flex: none;
     }
 
+    /* ABOUT ME SECTION */
     .about-me-content {
         flex-direction: column;
     }
 
-    .about-me-content img {
-        
+    .about-me-content img {   
         height: 100px;
         width: 100px;
         align-self: flex-end;
     }
+    /* END ABOUT ME SECTION */
 
+
+    /* CONTACT SECTION */
+    .contact-links li a {
+        font-size: 18px;
+        border-bottom: none;
+    }
+
+    .contact-links li {
+        margin-bottom: 10px;    
+    }
+
+    .contact-me ul li a {
+        font-size: 18px;
+    }
+    /* END CONTACT SECTION */
 }
