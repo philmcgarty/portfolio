@@ -219,12 +219,12 @@ main {
     background-image: url("../images/robot-gladiators.png");
 }
 
-.coming-soon {
-    background-image: url("../images/red.jpg"); 
+.weather {
+    background-image: url("../images/weather.png"); 
 }
 
-.coming-soon2 {
-    background-image: url("../images/green.jpg"); 
+.bbq-boss {
+    background-image: url("../images/bbq-boss.png"); 
 }
 /* End Work Section */
 /* END MAIN */
