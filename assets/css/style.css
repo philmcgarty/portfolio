@@ -206,7 +206,7 @@ main {
 
 /* work tile images */
 .work-item-large {
-    background-image: url("../images/run-buddy.png");
+    background-image: url("../images/home-garden-mgr.png");
     height: 300px;
     flex: 0 0 100%;   
 }
