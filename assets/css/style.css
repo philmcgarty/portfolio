@@ -206,9 +206,13 @@ main {
 
 /* work tile images */
 .work-item-large {
-    background-image: url("../images/home-garden-mgr.png");
+    background-image: url("../images/squabblehub.png");
     height: 300px;
     flex: 0 0 100%;   
+}
+
+.hgm {
+    background-image: url("../images/home-garden-mgr.png"); 
 }
 
 .horiseon {
