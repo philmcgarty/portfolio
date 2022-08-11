@@ -219,17 +219,18 @@ main {
     background-image: url("../images/horiseon.png"); 
 }
 
-.robot-gladiators {
-    background-image: url("../images/robot-gladiators.png");
+.tech-blog {
+    background-image: url("../images/tech-blog.png");
 }
 
 .weather {
     background-image: url("../images/weather.png"); 
 }
 
-.bbq-boss {
-    background-image: url("../images/bbq-boss.png"); 
+.quizify {
+    background-image: url("../images/quizify.png"); 
 }
+
 /* End Work Section */
 /* END MAIN */
 
